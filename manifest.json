@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Comment Copilot",
+    "version": "1.0",
+    "description": "AI-powered assistant for crafting personalized LinkedIn comments",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "host_permissions": ["*://*.linkedin.com/*", "https://your-backend-api.com/*"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "128": "images/icon128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.linkedin.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["images/*"],
+        "matches": ["*://*.linkedin.com/*"]
+      }
+    ]
+  }
