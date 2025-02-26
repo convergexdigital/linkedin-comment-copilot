@@ -4,7 +4,7 @@
     "version": "1.0",
     "description": "AI-powered assistant for crafting personalized LinkedIn comments",
     "permissions": ["storage", "activeTab", "scripting"],
-    "host_permissions": ["*://*.linkedin.com/*", "https://your-backend-api.com/*"],
+    "host_permissions": ["*://*.linkedin.com/*", "https://linkedin-comment-copilot.onrender.com*"],
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
