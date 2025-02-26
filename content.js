@@ -8,7 +8,7 @@
     let pendingRequests = new Map(); // Track pending API requests
     
     // Backend API URL - replace with your actual backend URL in production
-    const BACKEND_API_URL = "https://your-backend-api.com/api";
+    const BACKEND_API_URL = "https://linkedin-comment-copilot.onrender.com";
     
     // Initialize when document is ready
     if (document.readyState === "complete" || document.readyState === "interactive") {
